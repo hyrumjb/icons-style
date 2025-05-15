@@ -13,9 +13,9 @@ function About() {
     const title = "Check this out!";
 
     return (
-        <main>
+        <main className="max-w-[1000px] w-[90vw] mx-autof">
             <div className="description-box">
-                <h2>Behind this Site:</h2>
+                <h2 className="font-playfair">Behind this Site:</h2>
                 <p className="description">Everyone needs role models and examples.</p>
             </div>
             <p className="about">Some of these come into one's life naturally, like parents, family members,

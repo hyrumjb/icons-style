@@ -20,9 +20,9 @@ function Athletes() {
     }
 
     return (
-        <main>
+        <main className="max-w-[1000px] w-[90vw] mx-auto">
             <div className="description-box">
-                <h2>Athletes</h2>
+                <h2 className="font-playfair">Athletes</h2>
                 <p className="description">Here's the icons, the people the world sees on perhaps the biggest stages.
                     Everyone as a child has dreamed of hundreds of thousands to millions of fans
                     screaming their name as they perform in front of the world. These are the people

@@ -12,10 +12,10 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/icons/" element={<Home />} />
-        <Route path="/icons/about" element={<About />} />
-        <Route path="/icons/creators" element={<Creators />} />
-        <Route path="/icons/athletes" element={<Athletes />} />
+        <Route path="/icons-style/" element={<Home />} />
+        <Route path="/icons-style/about" element={<About />} />
+        <Route path="/icons-style/creators" element={<Creators />} />
+        <Route path="/icons-style/athletes" element={<Athletes />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

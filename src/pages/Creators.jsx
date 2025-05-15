@@ -27,9 +27,9 @@ function Creators() {
     }
 
     return (
-        <main>
+        <main className="max-w-[1000px] w-[90vw] mx-auto">
             <div className="description-box">
-                <h2>Creators</h2>
+                <h2 className="font-playfair text-6xl">Creators</h2>
                 <p className="description">Here's the world-changers, the shakers and makers who are 
                     putting something out into the world, who are building things and 
                     creating the world they can see in their head.

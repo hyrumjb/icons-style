@@ -16,8 +16,8 @@ function Bio({ name, article, ai, video }) {
 
     return (
         <div className="bio-box">
-            <h3>{name}</h3>
-            <a href={article} target="_blank">Aricle</a>
+            <h3 className="font-playfair">{name}</h3>
+            <a href={article} target="_blank">Article</a>
             <p>{ai}</p>
             <iframe
                 width="560"

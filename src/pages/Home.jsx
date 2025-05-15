@@ -18,38 +18,38 @@ function Home() {
     const title = "Check this out!";
     
     return (
-        <main>
-            <div className="description-box">
-                <h2>Welcome to Icons</h2>
-                <p className="description">Let's get to know the legends of our society, people who stand out wildly in their respective fields . . .</p>
+        <main className="max-w-[1000px] w-[90vw] mx-auto">
+            <div className="mt-10 mb-10 text-center">
+                <h2 className="font-playfair text-8xl">Welcome to Icons</h2>
+                <p className="mt-5 text-2xl w-[60vw] mx-auto text-[#987169]">Let's get to know the legends of our society, people who stand out wildly in their respective fields . . .</p>
             </div>
-            <div className="home-box right">
-                <img src={barackImg} alt="Barack Obama" className="main-image" />
-                <p>This spans a wide range of fields—including politics, entertainment, science, activism, and business—and features those who are shaping the future.</p>
+            <div className="flex gap-4 items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
+                <img className="h-75 rounded-2xl" src={barackImg} alt="Barack Obama" />
+                <p className="p-6 text-lg text-center">This spans a wide range of fields—including politics, entertainment, science, activism, and business—and features those who are shaping the future.</p>
             </div>
-            <div className="home-box left">
-                <p>Heroes, giants, titans, luminaries, pioneers, greats, trailblazers, masters, and hall-of-famers.</p>                
-                <img src={girlImg} alt="Spanx founder" className="main-image" />
+            <div className="flex gap-4 left items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
+                <p className="p-6 text-lg text-center">Heroes, giants, titans, luminaries, pioneers, greats, trailblazers, masters, and hall-of-famers.</p>                
+                <img className="h-75 rounded-2xl" src={girlImg} alt="Spanx founder" />
             </div>
-            <div className="home-box right">
-                <img src={dwayneImg} alt="Dwayne Johnson" className="main-image" />
-                <p>This site is not a ranking but, similar to the <i>TIME100</i>, is a celebration of impact and influence across the globe.</p>
+            <div className="flex gap-4 items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
+                <img className="h-75 rounded-2xl" src={dwayneImg} alt="Dwayne Johnson" />
+                <p className="p-6 text-lg text-center">This site is not a ranking but, similar to the <i>TIME100</i>, is a celebration of impact and influence across the globe.</p>
             </div>
-            <div className="links-box">
-                <NavLink to="/icons/creators">Learn more about the world's greatest creators.</NavLink>
-                <NavLink to="/icons/athletes">Discover the inside scoop on the best athletes.</NavLink>
+            <div className="flex items-center justify-between gap-4">
+                <NavLink className="p-4 text-center text-2xl bg-[#987169] rounded-2xl border-2 border-[#987169] hover:opacity-75" to="/icons-style/creators">Learn more about the world's greatest creators.</NavLink>
+                <NavLink className="p-4 text-center text-2xl bg-[#987169] rounded-2xl border-2 border-[#987169] hover:opacity-75" to="/icons-style/athletes">Discover the inside scoop on the best athletes.</NavLink>
             </div>
-            <div className="share-buttons">
+            <div className="flex my-8 items-center justify-center gap-3">
                 <FacebookShareButton url={shareUrl} quote={title}>
-                    <FacebookIcon size={32} round />
+                    <FacebookIcon size={40} round />
                 </FacebookShareButton>
 
                 <TwitterShareButton url={shareUrl} title={title}>
-                    <TwitterIcon size={32} round />
+                    <TwitterIcon size={40} round />
                 </TwitterShareButton>
 
                 <LinkedinShareButton url={shareUrl} title={title}>
-                    <LinkedinIcon size={32} round />
+                    <LinkedinIcon size={40} round />
                 </LinkedinShareButton>
             </div>
         </main>
