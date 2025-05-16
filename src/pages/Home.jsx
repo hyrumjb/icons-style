@@ -20,24 +20,24 @@ function Home() {
     return (
         <main className="max-w-[1000px] w-[90vw] mx-auto">
             <div className="mt-10 mb-10 text-center">
-                <h2 className="font-playfair text-8xl">Welcome to Icons</h2>
-                <p className="mt-5 text-2xl w-[60vw] mx-auto text-[#987169]">Let's get to know the legends of our society, people who stand out wildly in their respective fields . . .</p>
+                <h2 className="font-playfair text-7xl">Welcome to Icons</h2>
+                <p className="mt-5 text-xl w-[60vw] mx-auto text-[#987169]">Let's get to know the legends of our society, people who stand out wildly in their respective fields . . .</p>
             </div>
-            <div className="flex gap-4 items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
-                <img className="h-75 rounded-2xl" src={barackImg} alt="Barack Obama" />
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
+                <img className="lg:h-85 lg:w-auto sm:h-65 sm:w-auto rounded-2xl w-[70vw] h-auto" src={barackImg} alt="Barack Obama" />
                 <p className="p-6 text-lg text-center">This spans a wide range of fields—including politics, entertainment, science, activism, and business—and features those who are shaping the future.</p>
             </div>
-            <div className="flex gap-4 left items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
+            <div className="flex flex-col-reverse sm:flex-row gap-4 items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
                 <p className="p-6 text-lg text-center">Heroes, giants, titans, luminaries, pioneers, greats, trailblazers, masters, and hall-of-famers.</p>                
-                <img className="h-75 rounded-2xl" src={girlImg} alt="Spanx founder" />
+                <img className="lg:h-85 lg:w-auto sm:h-75 sm:w-auto rounded-2xl w-[70vw] h-auto" src={girlImg} alt="Spanx founder" />
             </div>
-            <div className="flex gap-4 items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
-                <img className="h-75 rounded-2xl" src={dwayneImg} alt="Dwayne Johnson" />
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mx-2 mb-8 p-4 border-2 border-amber-200 rounded-2xl">
+                <img className="lg:h-85 lg:w-auto sm:h-75 sm:w-auto rounded-2xl w-[70vw] h-auto" src={dwayneImg} alt="Dwayne Johnson" />
                 <p className="p-6 text-lg text-center">This site is not a ranking but, similar to the <i>TIME100</i>, is a celebration of impact and influence across the globe.</p>
             </div>
             <div className="flex items-center justify-between gap-4">
-                <NavLink className="p-4 text-center text-2xl bg-[#987169] rounded-2xl border-2 border-[#987169] hover:opacity-75" to="/icons-style/creators">Learn more about the world's greatest creators.</NavLink>
-                <NavLink className="p-4 text-center text-2xl bg-[#987169] rounded-2xl border-2 border-[#987169] hover:opacity-75" to="/icons-style/athletes">Discover the inside scoop on the best athletes.</NavLink>
+                <NavLink className="p-4 text-center text-xl bg-[#987169] rounded-2xl border-2 border-[#987169] hover:opacity-75" to="/icons-style/creators">Learn more about the world's greatest creators.</NavLink>
+                <NavLink className="p-4 text-center text-xl bg-[#987169] rounded-2xl border-2 border-[#987169] hover:opacity-75" to="/icons-style/athletes">Discover the inside scoop on the best athletes.</NavLink>
             </div>
             <div className="flex my-8 items-center justify-center gap-3">
                 <FacebookShareButton url={shareUrl} quote={title}>
