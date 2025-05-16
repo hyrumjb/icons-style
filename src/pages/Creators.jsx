@@ -40,15 +40,15 @@ function Creators() {
             <Bio {...travisKalanick} />
             <Bio {...mrBeast} />
             <div className="flex my-8 items-center justify-center gap-3">
-                <FacebookShareButton url={shareUrl} quote={title}>
+                <FacebookShareButton url={shareUrl} quote={title} className="hover:scale-110 transition-transform">
                     <FacebookIcon size={40} round />
                 </FacebookShareButton>
 
-                <TwitterShareButton url={shareUrl} title={title}>
+                <TwitterShareButton url={shareUrl} title={title} className="hover:scale-110 transition-transform">
                     <TwitterIcon size={40} round />
                 </TwitterShareButton>
 
-                <LinkedinShareButton url={shareUrl} title={title}>
+                <LinkedinShareButton url={shareUrl} title={title} className="hover:scale-110 transition-transform">
                     <LinkedinIcon size={40} round />
                 </LinkedinShareButton>
             </div>

@@ -13,11 +13,3 @@
 .font-playfair {
   font-family: 'Playfair Display', serif;
 }
-
-.active {
-  color: black;
-}
-
-html.dark .active {
-  color: white;
-}
